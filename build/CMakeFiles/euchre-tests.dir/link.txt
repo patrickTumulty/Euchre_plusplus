@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/euchre-tests.dir/test/test.cpp.o CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o  -o euchre-tests  libgtest.a 

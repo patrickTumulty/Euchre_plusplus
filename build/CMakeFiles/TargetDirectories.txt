@@ -1,0 +1,5 @@
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles/euchre-tests.dir
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles/euchre.dir
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles/rebuild_cache.dir
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles/edit_cache.dir
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles/gtest.dir

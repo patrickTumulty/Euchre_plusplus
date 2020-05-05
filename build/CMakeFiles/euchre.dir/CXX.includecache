@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.hpp
+iostream
+-
+vector
+-
+
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/main.cpp
+iostream
+-
+carddeck.hpp
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.hpp
+
