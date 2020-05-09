@@ -233,6 +233,66 @@ src/carddeck.cpp.s:
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/carddeck.cpp.s
 .PHONY : src/carddeck.cpp.s
 
+src/euchre.o: src/euchre.cpp.o
+
+.PHONY : src/euchre.o
+
+# target to build an object file
+src/euchre.cpp.o:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.o
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.o
+.PHONY : src/euchre.cpp.o
+
+src/euchre.i: src/euchre.cpp.i
+
+.PHONY : src/euchre.i
+
+# target to preprocess a source file
+src/euchre.cpp.i:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.i
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.i
+.PHONY : src/euchre.cpp.i
+
+src/euchre.s: src/euchre.cpp.s
+
+.PHONY : src/euchre.s
+
+# target to generate assembly for a file
+src/euchre.cpp.s:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.s
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.s
+.PHONY : src/euchre.cpp.s
+
+src/euchredeck.o: src/euchredeck.cpp.o
+
+.PHONY : src/euchredeck.o
+
+# target to build an object file
+src/euchredeck.cpp.o:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.o
+.PHONY : src/euchredeck.cpp.o
+
+src/euchredeck.i: src/euchredeck.cpp.i
+
+.PHONY : src/euchredeck.i
+
+# target to preprocess a source file
+src/euchredeck.cpp.i:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.i
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.i
+.PHONY : src/euchredeck.cpp.i
+
+src/euchredeck.s: src/euchredeck.cpp.s
+
+.PHONY : src/euchredeck.s
+
+# target to generate assembly for a file
+src/euchredeck.cpp.s:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.s
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.s
+.PHONY : src/euchredeck.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -259,6 +319,36 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/player.o: src/player.cpp.o
+
+.PHONY : src/player.o
+
+# target to build an object file
+src/player.cpp.o:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.o
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.o
+.PHONY : src/player.cpp.o
+
+src/player.i: src/player.cpp.i
+
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.cpp.i:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.i
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
+
+src/player.s: src/player.cpp.s
+
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.cpp.s:
+	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.s
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
 test/test.o: test/test.cpp.o
 
@@ -307,9 +397,18 @@ help:
 	@echo "... src/carddeck.o"
 	@echo "... src/carddeck.i"
 	@echo "... src/carddeck.s"
+	@echo "... src/euchre.o"
+	@echo "... src/euchre.i"
+	@echo "... src/euchre.s"
+	@echo "... src/euchredeck.o"
+	@echo "... src/euchredeck.i"
+	@echo "... src/euchredeck.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/player.o"
+	@echo "... src/player.i"
+	@echo "... src/player.s"
 	@echo "... test/test.o"
 	@echo "... test/test.i"
 	@echo "... test/test.s"

@@ -1,19 +1,18 @@
 #include <iostream>
+#include <memory>
 #include "carddeck.hpp"
+#include "euchredeck.hpp"
+#include "euchre.hpp"
 
 int main()
 {
-    std::unique_ptr<CardDeck> Deck = std::make_unique<CardDeck>();
-    Deck->shuffleDeck();
-    Card * card = Deck->getNextCard();
-    std::cout << card->value << " of " << card->suit << std::endl;
-    card = Deck->getNextCard();
-    std::cout << card->value << " of " << card->suit << std::endl;
-    card = Deck->getNextCard();
-    std::cout << card->value << " of " << card->suit << std::endl;
-    card = Deck->getNextCard();
-    std::cout << card->value << " of " << card->suit << std::endl;
-    card = Deck->getNextCard();
-    std::cout << card->value << " of " << card->suit << std::endl;
+    Euchre * euchre = new Euchre();
+    euchre->createNewPlayer("Ripley");
+    euchre->createNewPlayer("Deckard");
+    euchre->createNewPlayer("Winston");
+    euchre->createNewPlayer("Michael");
+    euchre->deal();
+    euchre->printPlayerHands(); // prints player name, player hand, and hand rank
+    
     return 0;
 }

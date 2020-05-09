@@ -83,20 +83,65 @@ CMakeFiles/euchre-tests.dir/src/carddeck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre-tests.dir/src/carddeck.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.cpp -o CMakeFiles/euchre-tests.dir/src/carddeck.cpp.s
 
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o: CMakeFiles/euchre-tests.dir/flags.make
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o: ../src/euchredeck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp
+
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp > CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.i
+
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp -o CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.s
+
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: CMakeFiles/euchre-tests.dir/flags.make
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/euchre.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/euchre-tests.dir/src/euchre.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre-tests.dir/src/euchre.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp
+
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre-tests.dir/src/euchre.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp > CMakeFiles/euchre-tests.dir/src/euchre.cpp.i
+
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre-tests.dir/src/euchre.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp -o CMakeFiles/euchre-tests.dir/src/euchre.cpp.s
+
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: CMakeFiles/euchre-tests.dir/flags.make
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: ../src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/euchre-tests.dir/src/player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre-tests.dir/src/player.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp
+
+CMakeFiles/euchre-tests.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre-tests.dir/src/player.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp > CMakeFiles/euchre-tests.dir/src/player.cpp.i
+
+CMakeFiles/euchre-tests.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre-tests.dir/src/player.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp -o CMakeFiles/euchre-tests.dir/src/player.cpp.s
+
 # Object files for target euchre-tests
 euchre__tests_OBJECTS = \
 "CMakeFiles/euchre-tests.dir/test/test.cpp.o" \
-"CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o"
+"CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o" \
+"CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o" \
+"CMakeFiles/euchre-tests.dir/src/euchre.cpp.o" \
+"CMakeFiles/euchre-tests.dir/src/player.cpp.o"
 
 # External object files for target euchre-tests
 euchre__tests_EXTERNAL_OBJECTS =
 
 euchre-tests: CMakeFiles/euchre-tests.dir/test/test.cpp.o
 euchre-tests: CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o
+euchre-tests: CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o
+euchre-tests: CMakeFiles/euchre-tests.dir/src/euchre.cpp.o
+euchre-tests: CMakeFiles/euchre-tests.dir/src/player.cpp.o
 euchre-tests: CMakeFiles/euchre-tests.dir/build.make
 euchre-tests: libgtest.a
 euchre-tests: CMakeFiles/euchre-tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable euchre-tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable euchre-tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/euchre-tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

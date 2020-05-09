@@ -83,19 +83,64 @@ CMakeFiles/euchre.dir/src/carddeck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre.dir/src/carddeck.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.cpp -o CMakeFiles/euchre.dir/src/carddeck.cpp.s
 
+CMakeFiles/euchre.dir/src/euchredeck.cpp.o: CMakeFiles/euchre.dir/flags.make
+CMakeFiles/euchre.dir/src/euchredeck.cpp.o: ../src/euchredeck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/euchre.dir/src/euchredeck.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre.dir/src/euchredeck.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp
+
+CMakeFiles/euchre.dir/src/euchredeck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre.dir/src/euchredeck.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp > CMakeFiles/euchre.dir/src/euchredeck.cpp.i
+
+CMakeFiles/euchre.dir/src/euchredeck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre.dir/src/euchredeck.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp -o CMakeFiles/euchre.dir/src/euchredeck.cpp.s
+
+CMakeFiles/euchre.dir/src/euchre.cpp.o: CMakeFiles/euchre.dir/flags.make
+CMakeFiles/euchre.dir/src/euchre.cpp.o: ../src/euchre.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/euchre.dir/src/euchre.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre.dir/src/euchre.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp
+
+CMakeFiles/euchre.dir/src/euchre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre.dir/src/euchre.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp > CMakeFiles/euchre.dir/src/euchre.cpp.i
+
+CMakeFiles/euchre.dir/src/euchre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre.dir/src/euchre.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.cpp -o CMakeFiles/euchre.dir/src/euchre.cpp.s
+
+CMakeFiles/euchre.dir/src/player.cpp.o: CMakeFiles/euchre.dir/flags.make
+CMakeFiles/euchre.dir/src/player.cpp.o: ../src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/euchre.dir/src/player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/euchre.dir/src/player.cpp.o -c /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp
+
+CMakeFiles/euchre.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/euchre.dir/src/player.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp > CMakeFiles/euchre.dir/src/player.cpp.i
+
+CMakeFiles/euchre.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/euchre.dir/src/player.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.cpp -o CMakeFiles/euchre.dir/src/player.cpp.s
+
 # Object files for target euchre
 euchre_OBJECTS = \
 "CMakeFiles/euchre.dir/src/main.cpp.o" \
-"CMakeFiles/euchre.dir/src/carddeck.cpp.o"
+"CMakeFiles/euchre.dir/src/carddeck.cpp.o" \
+"CMakeFiles/euchre.dir/src/euchredeck.cpp.o" \
+"CMakeFiles/euchre.dir/src/euchre.cpp.o" \
+"CMakeFiles/euchre.dir/src/player.cpp.o"
 
 # External object files for target euchre
 euchre_EXTERNAL_OBJECTS =
 
 euchre: CMakeFiles/euchre.dir/src/main.cpp.o
 euchre: CMakeFiles/euchre.dir/src/carddeck.cpp.o
+euchre: CMakeFiles/euchre.dir/src/euchredeck.cpp.o
+euchre: CMakeFiles/euchre.dir/src/euchre.cpp.o
+euchre: CMakeFiles/euchre.dir/src/player.cpp.o
 euchre: CMakeFiles/euchre.dir/build.make
 euchre: CMakeFiles/euchre.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable euchre"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable euchre"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/euchre.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

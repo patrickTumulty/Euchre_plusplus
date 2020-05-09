@@ -10,23 +10,36 @@ Card::Card(std::string value, std::string suit)
 {
     this->value = value;
     this->suit = suit;
+    this->pointValue = 0;
+    this->setColor();
+}
+
+void Card::setColor()
+{
+    if (this->suit == "Hearts" || this->suit == "Diamonds")
+    {
+        this->color = "Red";
+    }
+    else if (this->suit == "Clubs" || this->suit == "Spades")
+    {
+        this->color = "Black";
+    }
 }
 
 CardDeck::CardDeck()
 {
-    this->createNewDeck();
+    this->mMainDeck = new std::vector<Card*>();
+    this->mDiscardPile = new std::stack<Card*>();
 }
 
 CardDeck::~CardDeck()
 {
     delete mMainDeck;
+    delete mDiscardPile;
 }
 
 void CardDeck::createNewDeck()
 {
-    this->mMainDeck = new std::vector<Card*>();
-    this->mDiscardPile = new std::vector<Card*>(); // empty
-
     this->mMainDeck->push_back(new Card("2", "H"));
     this->mMainDeck->push_back(new Card("3", "H"));
     this->mMainDeck->push_back(new Card("4", "H"));
@@ -82,8 +95,44 @@ void CardDeck::createNewDeck()
     this->mMainDeck->push_back(new Card("Queen","C"));
     this->mMainDeck->push_back(new Card("King", "C"));
     this->mMainDeck->push_back(new Card("Ace",  "C"));
-
 }
+
+void CardDeck::resetDeck()
+{
+    this->mMainDeck->clear();
+    this->createNewDeck();
+}
+
+void CardDeck::addJokers()
+{
+    this->mMainDeck->push_back(new Card("Joker", "J1"));
+    this->mMainDeck->push_back(new Card("Joker", "J2"));
+}
+
+void CardDeck::removeJokers()
+{
+    int numJokers = 2;
+    int index = 0;
+    while(numJokers != 0)
+    {
+        if (this->mMainDeck->at(index)->value == "Joker")
+        {
+            this->mMainDeck->erase(this->mMainDeck->begin() + index);
+            numJokers--;
+        }
+        else
+        {
+            index++;
+        }
+    }
+}
+
+
+void CardDeck::discardNextCard()
+{
+    this->mDiscardPile->push(this->getNextCard());
+}
+
 
 void CardDeck::shuffleDeck()
 {
@@ -95,12 +144,16 @@ Card * CardDeck::getNextCard()
     Card * c = this->mMainDeck->back();
     this->mMainDeck->pop_back();
     return c;
-    ;
+}
+
+Card * CardDeck::revealTopCard()
+{
+    return this->mMainDeck->back();
 }
 
 void CardDeck::addToDiscardPile(Card * card)
 {
-    this->mDiscardPile->push_back(card);
+    this->mDiscardPile->push(card);
 }
 
 int CardDeck::getNumRemainingCards()

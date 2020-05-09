@@ -4,6 +4,21 @@
 CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o: ../src/carddeck.cpp
 CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o: ../src/carddeck.hpp
 
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/euchre.cpp
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/euchre.hpp
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/euchredeck.hpp
+CMakeFiles/euchre-tests.dir/src/euchre.cpp.o: ../src/player.hpp
+
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o: ../src/euchredeck.cpp
+CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o: ../src/euchredeck.hpp
+
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: ../src/euchredeck.hpp
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: ../src/player.cpp
+CMakeFiles/euchre-tests.dir/src/player.cpp.o: ../src/player.hpp
+
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gtest/gtest-message.h
@@ -25,5 +40,8 @@ CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gt
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../src/euchre.hpp
+CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../src/euchredeck.hpp
+CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../src/player.hpp
 CMakeFiles/euchre-tests.dir/test/test.cpp.o: ../test/test.cpp
 

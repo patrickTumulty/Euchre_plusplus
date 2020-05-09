@@ -78,12 +78,12 @@ clean: CMakeFiles/gtest.dir/clean
 CMakeFiles/euchre-tests.dir/all: CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/depend
 	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=4,5,6 "Built target euchre-tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target euchre-tests"
 .PHONY : CMakeFiles/euchre-tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/euchre-tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/euchre-tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 0
 .PHONY : CMakeFiles/euchre-tests.dir/rule
@@ -105,12 +105,12 @@ CMakeFiles/euchre-tests.dir/clean:
 CMakeFiles/euchre.dir/all:
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/depend
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=1,2,3 "Built target euchre"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target euchre"
 .PHONY : CMakeFiles/euchre.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/euchre.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/euchre.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles 0
 .PHONY : CMakeFiles/euchre.dir/rule
@@ -132,7 +132,7 @@ CMakeFiles/euchre.dir/clean:
 CMakeFiles/gtest.dir/all:
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=7,8,9 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/build/CMakeFiles --progress-num=13,14,15 "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

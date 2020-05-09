@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/euchre.dir/src/carddeck.cpp.o"
+  "CMakeFiles/euchre.dir/src/euchre.cpp.o"
+  "CMakeFiles/euchre.dir/src/euchredeck.cpp.o"
   "CMakeFiles/euchre.dir/src/main.cpp.o"
+  "CMakeFiles/euchre.dir/src/player.cpp.o"
   "euchre"
   "euchre.pdb"
 )

@@ -3,13 +3,20 @@
 #define CARDDECK_HPP
 
 #include <iostream>
+#include <stack>
 #include <vector>
 
 struct Card
 {
     Card(std::string value, std::string suit);
+
+    void setColor();
+
+    int pointValue;
     std::string value;
     std::string suit;
+    std::string color;
+
 };
 
 
@@ -19,16 +26,21 @@ public:
     CardDeck();
     ~CardDeck();
 
-    void createNewDeck();
+    virtual void createNewDeck();
     void shuffleDeck();
     void addToDiscardPile(Card * card);
+    void removeJokers();
+    void addJokers();
+    void resetDeck();
+    void discardNextCard();
+    Card * revealTopCard(); 
     int getNumRemainingCards();
     Card * getNextCard();
 
-private:
+protected:
     std::vector<Card*> * mMainDeck;
-    std::vector<Card*> * mDiscardPile;
-
+    std::stack<Card*> * mDiscardPile;
+    
 };
 
 #endif
