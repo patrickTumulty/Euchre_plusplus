@@ -14,37 +14,15 @@ stack
 vector
 -
 
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.hpp
-iostream
--
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.cpp
+euchredeck.hpp
+/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.hpp
 map
 -
-euchredeck.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.hpp
-player.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.hpp
+iostream
+-
 
 /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.hpp
 carddeck.hpp
 /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.hpp
-
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/main.cpp
-iostream
--
-memory
--
-carddeck.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/carddeck.hpp
-euchredeck.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.hpp
-euchre.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchre.hpp
-
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/player.hpp
-iostream
--
-vector
--
-euchredeck.hpp
-/Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/src/euchredeck.hpp
 

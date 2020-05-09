@@ -8,7 +8,6 @@ class EuchreDeck : public CardDeck
 {
 public: 
     void createNewDeck() override;
-    void rankCards(std::string trumpSuit);
     std::string checkColor(std::string suit);
 private:
     
