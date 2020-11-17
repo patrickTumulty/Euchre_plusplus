@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/euchre.dir/src/carddeck.cpp.o"
+  "CMakeFiles/euchre.dir/src/cardprinter.cpp.o"
   "CMakeFiles/euchre.dir/src/euchre.cpp.o"
   "CMakeFiles/euchre.dir/src/euchredeck.cpp.o"
   "CMakeFiles/euchre.dir/src/main.cpp.o"

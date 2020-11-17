@@ -4,27 +4,27 @@
 
 Euchre::Euchre()
 {
-    this->mDeck = new EuchreDeck();
-    this->mPlayers = new std::map<std::string, Player*>();
-    this->mDeck->createNewDeck();
-    this->mDeck->shuffleDeck();
+    mDeck = new EuchreDeck();
+    mPlayers = new std::map<std::string, Player*>();
+    mDeck->createNewDeck();
+    mDeck->shuffleDeck();
 
 }
 
 Euchre::~Euchre()
 {
-    delete this->mDeck;
+    delete mDeck;
 }
 
 void Euchre::printPlayerHands()
 {
-    for (std::map<std::string, Player*>::iterator it = this->mPlayers->begin(); it != this->mPlayers->end(); ++it)
+    for (std::map<std::string, Player*>::iterator it = mPlayers->begin(); it != mPlayers->end(); ++it)
         it->second->printHand();
 }
 
 void Euchre::printRankedHands()
 {
-    for (std::map<std::string, Player*>::iterator it = this->mPlayers->begin(); it != this->mPlayers->end(); ++it)
+    for (std::map<std::string, Player*>::iterator it = mPlayers->begin(); it != mPlayers->end(); ++it)
     {
         std::cout << "[" << it->first << "]" << std::endl;
         std::cout << "Hand Score : " << it->second->rateHand() << std::endl;
@@ -37,17 +37,17 @@ void Euchre::deal()
     for (int i = 0; i < 2; i++)
     {
         if (i == 1) { numDealtCards = 3; }
-        for (std::map<std::string, Player*>::iterator it = this->mPlayers->begin(); it != this->mPlayers->end(); ++it)
+        for (std::map<std::string, Player*>::iterator it = mPlayers->begin(); it != mPlayers->end(); ++it)
         {
             for (int j = 0; j < numDealtCards; j++)
             {
-                it->second->addCardToHand(this->mDeck->getNextCard());
+                it->second->addCardToHand(mDeck->getNextCard());
             }
         }
     }
-    this->mTrumpSuit = this->mDeck->revealTopCard()->suit;
-    std::cout << "Trump Suit is " << this->mTrumpSuit << std::endl;
-    for (std::map<std::string, Player*>::iterator it = this->mPlayers->begin(); it != this->mPlayers->end(); ++it)
+    mTrumpSuit = mDeck->revealTopCard()->suit;
+    std::cout << "Trump Suit is " << mTrumpSuit << std::endl;
+    for (std::map<std::string, Player*>::iterator it = mPlayers->begin(); it != mPlayers->end(); ++it)
     {
         it->second->setTrumpSuit(mTrumpSuit);
     }
@@ -55,11 +55,16 @@ void Euchre::deal()
 
 std::string Euchre::getTrumpSuit()
 {
-    return this->mTrumpSuit;
+    return mTrumpSuit;
 }
 
 void Euchre::createNewPlayer(std::string playerName)
 {
     Player * newPlayer = new Player(playerName);
-    this->mPlayers->insert(std::pair<std::string, Player*>(playerName, newPlayer));
+    mPlayers->insert(std::pair<std::string, Player*>(playerName, newPlayer));
+}
+
+void Euchre::gameLoop()
+{
+    
 }

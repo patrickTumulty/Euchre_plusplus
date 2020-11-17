@@ -6,30 +6,32 @@
 
 #include "carddeck.hpp"
 
+
+
 Card::Card(std::string value, std::string suit)
 {
-    this->value = value;
-    this->suit = suit;
-    this->pointValue = 0;
-    this->setColor();
+    value = value;
+    suit = suit;
+    pointValue = 0;
+    setColor();
 }
 
 void Card::setColor()
 {
-    if (this->suit == "Hearts" || this->suit == "Diamonds")
+    if (suit == "Hearts" || suit == "Diamonds")
     {
-        this->color = "Red";
+        color = "Red";
     }
-    else if (this->suit == "Clubs" || this->suit == "Spades")
+    else if (suit == "Clubs" || suit == "Spades")
     {
-        this->color = "Black";
+        color = "Black";
     }
 }
 
 CardDeck::CardDeck()
 {
-    this->mMainDeck = new std::vector<Card*>();
-    this->mDiscardPile = new std::stack<Card*>();
+    mMainDeck = new std::vector<Card*>();
+    mDiscardPile = new std::stack<Card*>();
 }
 
 CardDeck::~CardDeck()
@@ -40,73 +42,73 @@ CardDeck::~CardDeck()
 
 void CardDeck::createNewDeck()
 {
-    this->mMainDeck->push_back(new Card("2", "H"));
-    this->mMainDeck->push_back(new Card("3", "H"));
-    this->mMainDeck->push_back(new Card("4", "H"));
-    this->mMainDeck->push_back(new Card("5", "H"));
-    this->mMainDeck->push_back(new Card("6", "H"));
-    this->mMainDeck->push_back(new Card("7", "H"));
-    this->mMainDeck->push_back(new Card("8", "H"));
-    this->mMainDeck->push_back(new Card("9", "H"));
-    this->mMainDeck->push_back(new Card("10","H"));
-    this->mMainDeck->push_back(new Card("Jack", "H"));
-    this->mMainDeck->push_back(new Card("Queen","H"));
-    this->mMainDeck->push_back(new Card("King", "H"));
-    this->mMainDeck->push_back(new Card("Ace",  "H"));
+    mMainDeck->push_back(new Card("2",    "Hearts"));
+    mMainDeck->push_back(new Card("3",    "Hearts"));
+    mMainDeck->push_back(new Card("4",    "Hearts"));
+    mMainDeck->push_back(new Card("5",    "Hearts"));
+    mMainDeck->push_back(new Card("6",    "Hearts"));
+    mMainDeck->push_back(new Card("7",    "Hearts"));
+    mMainDeck->push_back(new Card("8",    "Hearts"));
+    mMainDeck->push_back(new Card("9",    "Hearts"));
+    mMainDeck->push_back(new Card("10",   "Hearts"));
+    mMainDeck->push_back(new Card("Jack", "Hearts"));
+    mMainDeck->push_back(new Card("Queen","Hearts"));
+    mMainDeck->push_back(new Card("King", "Hearts"));
+    mMainDeck->push_back(new Card("Ace",  "Hearts"));
 
-    this->mMainDeck->push_back(new Card("2", "D"));
-    this->mMainDeck->push_back(new Card("3", "D"));
-    this->mMainDeck->push_back(new Card("4", "D"));
-    this->mMainDeck->push_back(new Card("5", "D"));
-    this->mMainDeck->push_back(new Card("6", "D"));
-    this->mMainDeck->push_back(new Card("7", "D"));
-    this->mMainDeck->push_back(new Card("8", "D"));
-    this->mMainDeck->push_back(new Card("9", "D"));
-    this->mMainDeck->push_back(new Card("10","D"));
-    this->mMainDeck->push_back(new Card("Jack", "D"));
-    this->mMainDeck->push_back(new Card("Queen","D"));
-    this->mMainDeck->push_back(new Card("King", "D"));
-    this->mMainDeck->push_back(new Card("Ace",  "D"));
+    mMainDeck->push_back(new Card("2", "Diamonds"));
+    mMainDeck->push_back(new Card("3", "Diamonds"));
+    mMainDeck->push_back(new Card("4", "Diamonds"));
+    mMainDeck->push_back(new Card("5", "Diamonds"));
+    mMainDeck->push_back(new Card("6", "Diamonds"));
+    mMainDeck->push_back(new Card("7", "D"));
+    mMainDeck->push_back(new Card("8", "D"));
+    mMainDeck->push_back(new Card("9", "D"));
+    mMainDeck->push_back(new Card("10","D"));
+    mMainDeck->push_back(new Card("Jack", "Diamonds"));
+    mMainDeck->push_back(new Card("Queen","D"));
+    mMainDeck->push_back(new Card("King", "D"));
+    mMainDeck->push_back(new Card("Ace",  "D"));
 
-    this->mMainDeck->push_back(new Card("2", "S"));
-    this->mMainDeck->push_back(new Card("3", "S"));
-    this->mMainDeck->push_back(new Card("4", "S"));
-    this->mMainDeck->push_back(new Card("5", "S"));
-    this->mMainDeck->push_back(new Card("6", "S"));
-    this->mMainDeck->push_back(new Card("7", "S"));
-    this->mMainDeck->push_back(new Card("8", "S"));
-    this->mMainDeck->push_back(new Card("9", "S"));
-    this->mMainDeck->push_back(new Card("10","S"));
-    this->mMainDeck->push_back(new Card("Jack", "S"));
-    this->mMainDeck->push_back(new Card("Queen","S"));
-    this->mMainDeck->push_back(new Card("King", "S"));
-    this->mMainDeck->push_back(new Card("Ace",  "S"));
+    mMainDeck->push_back(new Card("2", "S"));
+    mMainDeck->push_back(new Card("3", "S"));
+    mMainDeck->push_back(new Card("4", "S"));
+    mMainDeck->push_back(new Card("5", "S"));
+    mMainDeck->push_back(new Card("6", "S"));
+    mMainDeck->push_back(new Card("7", "S"));
+    mMainDeck->push_back(new Card("8", "S"));
+    mMainDeck->push_back(new Card("9", "S"));
+    mMainDeck->push_back(new Card("10","S"));
+    mMainDeck->push_back(new Card("Jack", "S"));
+    mMainDeck->push_back(new Card("Queen","S"));
+    mMainDeck->push_back(new Card("King", "S"));
+    mMainDeck->push_back(new Card("Ace",  "S"));
 
-    this->mMainDeck->push_back(new Card("2", "C"));
-    this->mMainDeck->push_back(new Card("3", "C"));
-    this->mMainDeck->push_back(new Card("4", "C"));
-    this->mMainDeck->push_back(new Card("5", "C"));
-    this->mMainDeck->push_back(new Card("6", "C"));
-    this->mMainDeck->push_back(new Card("7", "C"));
-    this->mMainDeck->push_back(new Card("8", "C"));
-    this->mMainDeck->push_back(new Card("9", "C"));
-    this->mMainDeck->push_back(new Card("10","C"));
-    this->mMainDeck->push_back(new Card("Jack", "C"));
-    this->mMainDeck->push_back(new Card("Queen","C"));
-    this->mMainDeck->push_back(new Card("King", "C"));
-    this->mMainDeck->push_back(new Card("Ace",  "C"));
+    mMainDeck->push_back(new Card("2", "C"));
+    mMainDeck->push_back(new Card("3", "C"));
+    mMainDeck->push_back(new Card("4", "C"));
+    mMainDeck->push_back(new Card("5", "C"));
+    mMainDeck->push_back(new Card("6", "C"));
+    mMainDeck->push_back(new Card("7", "C"));
+    mMainDeck->push_back(new Card("8", "C"));
+    mMainDeck->push_back(new Card("9", "C"));
+    mMainDeck->push_back(new Card("10","C"));
+    mMainDeck->push_back(new Card("Jack", "C"));
+    mMainDeck->push_back(new Card("Queen","C"));
+    mMainDeck->push_back(new Card("King", "C"));
+    mMainDeck->push_back(new Card("Ace",  "C"));
 }
 
 void CardDeck::resetDeck()
 {
-    this->mMainDeck->clear();
-    this->createNewDeck();
+    mMainDeck->clear();
+    createNewDeck();
 }
 
 void CardDeck::addJokers()
 {
-    this->mMainDeck->push_back(new Card("Joker", "J1"));
-    this->mMainDeck->push_back(new Card("Joker", "J2"));
+    mMainDeck->push_back(new Card("Joker", "J1"));
+    mMainDeck->push_back(new Card("Joker", "J2"));
 }
 
 void CardDeck::removeJokers()
@@ -115,9 +117,9 @@ void CardDeck::removeJokers()
     int index = 0;
     while(numJokers != 0)
     {
-        if (this->mMainDeck->at(index)->value == "Joker")
+        if (mMainDeck->at(index)->value == "Joker")
         {
-            this->mMainDeck->erase(this->mMainDeck->begin() + index);
+            mMainDeck->erase(mMainDeck->begin() + index);
             numJokers--;
         }
         else
@@ -130,33 +132,33 @@ void CardDeck::removeJokers()
 
 void CardDeck::discardNextCard()
 {
-    this->mDiscardPile->push(this->getNextCard());
+    mDiscardPile->push(getNextCard());
 }
 
 
 void CardDeck::shuffleDeck()
 {
-    std::shuffle(this->mMainDeck->begin(), this->mMainDeck->end(), std::random_device());
+    std::shuffle(mMainDeck->begin(), mMainDeck->end(), std::random_device());
 }
 
 Card * CardDeck::getNextCard()
 {
-    Card * c = this->mMainDeck->back();
-    this->mMainDeck->pop_back();
+    Card * c = mMainDeck->back();
+    mMainDeck->pop_back();
     return c;
 }
 
 Card * CardDeck::revealTopCard()
 {
-    return this->mMainDeck->back();
+    return mMainDeck->back();
 }
 
 void CardDeck::addToDiscardPile(Card * card)
 {
-    this->mDiscardPile->push(card);
+    mDiscardPile->push(card);
 }
 
 int CardDeck::getNumRemainingCards()
 {
-    return this->mMainDeck->size();
+    return mMainDeck->size();
 }

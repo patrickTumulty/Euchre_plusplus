@@ -11,7 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
-  "../gtest.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -21,17 +20,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeLanguageInformation.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CheckCSourceCompiles.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CheckIncludeFile.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/CheckLibraryExists.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Compiler/Clang.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Compiler/GNU.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/FindPackageMessage.cmake"
-  "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/FindThreads.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.16.5/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
@@ -56,7 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/euchre-tests.dir/DependInfo.cmake"
   "CMakeFiles/euchre.dir/DependInfo.cmake"
-  "CMakeFiles/gtest.dir/DependInfo.cmake"
   )

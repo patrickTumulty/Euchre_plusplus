@@ -4,6 +4,10 @@
 CMakeFiles/euchre.dir/src/carddeck.cpp.o: ../src/carddeck.cpp
 CMakeFiles/euchre.dir/src/carddeck.cpp.o: ../src/carddeck.hpp
 
+CMakeFiles/euchre.dir/src/cardprinter.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre.dir/src/cardprinter.cpp.o: ../src/cardprinter.cpp
+CMakeFiles/euchre.dir/src/cardprinter.cpp.o: ../src/cardprinter.hpp
+
 CMakeFiles/euchre.dir/src/euchre.cpp.o: ../src/carddeck.hpp
 CMakeFiles/euchre.dir/src/euchre.cpp.o: ../src/euchre.cpp
 CMakeFiles/euchre.dir/src/euchre.cpp.o: ../src/euchre.hpp
@@ -15,6 +19,7 @@ CMakeFiles/euchre.dir/src/euchredeck.cpp.o: ../src/euchredeck.cpp
 CMakeFiles/euchre.dir/src/euchredeck.cpp.o: ../src/euchredeck.hpp
 
 CMakeFiles/euchre.dir/src/main.cpp.o: ../src/carddeck.hpp
+CMakeFiles/euchre.dir/src/main.cpp.o: ../src/cardprinter.hpp
 CMakeFiles/euchre.dir/src/main.cpp.o: ../src/euchre.hpp
 CMakeFiles/euchre.dir/src/main.cpp.o: ../src/euchredeck.hpp
 CMakeFiles/euchre.dir/src/main.cpp.o: ../src/main.cpp

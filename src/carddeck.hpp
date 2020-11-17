@@ -6,6 +6,8 @@
 #include <stack>
 #include <vector>
 
+#define DIAMONDS = "Diamonds"; 
+#define JACK = "Jack";
 struct Card
 {
     Card(std::string value, std::string suit);

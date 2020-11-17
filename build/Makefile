@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named euchre-tests
-
-# Build rule for target.
-euchre-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 euchre-tests
-.PHONY : euchre-tests
-
-# fast build rule for target.
-euchre-tests/fast:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/build
-.PHONY : euchre-tests/fast
-
-#=============================================================================
 # Target rules for targets named euchre
 
 # Build rule for target.
@@ -136,80 +123,12 @@ euchre/fast:
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/build
 .PHONY : euchre/fast
 
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-googletest/googletest/src/gtest-all.o: googletest/googletest/src/gtest-all.cc.o
-
-.PHONY : googletest/googletest/src/gtest-all.o
-
-# target to build an object file
-googletest/googletest/src/gtest-all.cc.o:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.o
-.PHONY : googletest/googletest/src/gtest-all.cc.o
-
-googletest/googletest/src/gtest-all.i: googletest/googletest/src/gtest-all.cc.i
-
-.PHONY : googletest/googletest/src/gtest-all.i
-
-# target to preprocess a source file
-googletest/googletest/src/gtest-all.cc.i:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.i
-.PHONY : googletest/googletest/src/gtest-all.cc.i
-
-googletest/googletest/src/gtest-all.s: googletest/googletest/src/gtest-all.cc.s
-
-.PHONY : googletest/googletest/src/gtest-all.s
-
-# target to generate assembly for a file
-googletest/googletest/src/gtest-all.cc.s:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.s
-.PHONY : googletest/googletest/src/gtest-all.cc.s
-
-googletest/googletest/src/gtest_main.o: googletest/googletest/src/gtest_main.cc.o
-
-.PHONY : googletest/googletest/src/gtest_main.o
-
-# target to build an object file
-googletest/googletest/src/gtest_main.cc.o:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.o
-.PHONY : googletest/googletest/src/gtest_main.cc.o
-
-googletest/googletest/src/gtest_main.i: googletest/googletest/src/gtest_main.cc.i
-
-.PHONY : googletest/googletest/src/gtest_main.i
-
-# target to preprocess a source file
-googletest/googletest/src/gtest_main.cc.i:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.i
-.PHONY : googletest/googletest/src/gtest_main.cc.i
-
-googletest/googletest/src/gtest_main.s: googletest/googletest/src/gtest_main.cc.s
-
-.PHONY : googletest/googletest/src/gtest_main.s
-
-# target to generate assembly for a file
-googletest/googletest/src/gtest_main.cc.s:
-	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.s
-.PHONY : googletest/googletest/src/gtest_main.cc.s
-
 src/carddeck.o: src/carddeck.cpp.o
 
 .PHONY : src/carddeck.o
 
 # target to build an object file
 src/carddeck.cpp.o:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/carddeck.cpp.o
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/carddeck.cpp.o
 .PHONY : src/carddeck.cpp.o
 
@@ -219,7 +138,6 @@ src/carddeck.i: src/carddeck.cpp.i
 
 # target to preprocess a source file
 src/carddeck.cpp.i:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/carddeck.cpp.i
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/carddeck.cpp.i
 .PHONY : src/carddeck.cpp.i
 
@@ -229,9 +147,35 @@ src/carddeck.s: src/carddeck.cpp.s
 
 # target to generate assembly for a file
 src/carddeck.cpp.s:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/carddeck.cpp.s
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/carddeck.cpp.s
 .PHONY : src/carddeck.cpp.s
+
+src/cardprinter.o: src/cardprinter.cpp.o
+
+.PHONY : src/cardprinter.o
+
+# target to build an object file
+src/cardprinter.cpp.o:
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/cardprinter.cpp.o
+.PHONY : src/cardprinter.cpp.o
+
+src/cardprinter.i: src/cardprinter.cpp.i
+
+.PHONY : src/cardprinter.i
+
+# target to preprocess a source file
+src/cardprinter.cpp.i:
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/cardprinter.cpp.i
+.PHONY : src/cardprinter.cpp.i
+
+src/cardprinter.s: src/cardprinter.cpp.s
+
+.PHONY : src/cardprinter.s
+
+# target to generate assembly for a file
+src/cardprinter.cpp.s:
+	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/cardprinter.cpp.s
+.PHONY : src/cardprinter.cpp.s
 
 src/euchre.o: src/euchre.cpp.o
 
@@ -239,7 +183,6 @@ src/euchre.o: src/euchre.cpp.o
 
 # target to build an object file
 src/euchre.cpp.o:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.o
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.o
 .PHONY : src/euchre.cpp.o
 
@@ -249,7 +192,6 @@ src/euchre.i: src/euchre.cpp.i
 
 # target to preprocess a source file
 src/euchre.cpp.i:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.i
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.i
 .PHONY : src/euchre.cpp.i
 
@@ -259,7 +201,6 @@ src/euchre.s: src/euchre.cpp.s
 
 # target to generate assembly for a file
 src/euchre.cpp.s:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchre.cpp.s
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchre.cpp.s
 .PHONY : src/euchre.cpp.s
 
@@ -269,7 +210,6 @@ src/euchredeck.o: src/euchredeck.cpp.o
 
 # target to build an object file
 src/euchredeck.cpp.o:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.o
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.o
 .PHONY : src/euchredeck.cpp.o
 
@@ -279,7 +219,6 @@ src/euchredeck.i: src/euchredeck.cpp.i
 
 # target to preprocess a source file
 src/euchredeck.cpp.i:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.i
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.i
 .PHONY : src/euchredeck.cpp.i
 
@@ -289,7 +228,6 @@ src/euchredeck.s: src/euchredeck.cpp.s
 
 # target to generate assembly for a file
 src/euchredeck.cpp.s:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/euchredeck.cpp.s
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/euchredeck.cpp.s
 .PHONY : src/euchredeck.cpp.s
 
@@ -326,7 +264,6 @@ src/player.o: src/player.cpp.o
 
 # target to build an object file
 src/player.cpp.o:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.o
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.o
 .PHONY : src/player.cpp.o
 
@@ -336,7 +273,6 @@ src/player.i: src/player.cpp.i
 
 # target to preprocess a source file
 src/player.cpp.i:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.i
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.i
 .PHONY : src/player.cpp.i
 
@@ -346,36 +282,8 @@ src/player.s: src/player.cpp.s
 
 # target to generate assembly for a file
 src/player.cpp.s:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/src/player.cpp.s
 	$(MAKE) -f CMakeFiles/euchre.dir/build.make CMakeFiles/euchre.dir/src/player.cpp.s
 .PHONY : src/player.cpp.s
-
-test/test.o: test/test.cpp.o
-
-.PHONY : test/test.o
-
-# target to build an object file
-test/test.cpp.o:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/test/test.cpp.o
-.PHONY : test/test.cpp.o
-
-test/test.i: test/test.cpp.i
-
-.PHONY : test/test.i
-
-# target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
-
-test/test.s: test/test.cpp.s
-
-.PHONY : test/test.s
-
-# target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) -f CMakeFiles/euchre-tests.dir/build.make CMakeFiles/euchre-tests.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
 
 # Help Target
 help:
@@ -383,20 +291,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... euchre-tests"
-	@echo "... euchre"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... gtest"
-	@echo "... googletest/googletest/src/gtest-all.o"
-	@echo "... googletest/googletest/src/gtest-all.i"
-	@echo "... googletest/googletest/src/gtest-all.s"
-	@echo "... googletest/googletest/src/gtest_main.o"
-	@echo "... googletest/googletest/src/gtest_main.i"
-	@echo "... googletest/googletest/src/gtest_main.s"
+	@echo "... euchre"
 	@echo "... src/carddeck.o"
 	@echo "... src/carddeck.i"
 	@echo "... src/carddeck.s"
+	@echo "... src/cardprinter.o"
+	@echo "... src/cardprinter.i"
+	@echo "... src/cardprinter.s"
 	@echo "... src/euchre.o"
 	@echo "... src/euchre.i"
 	@echo "... src/euchre.s"
@@ -409,9 +312,6 @@ help:
 	@echo "... src/player.o"
 	@echo "... src/player.i"
 	@echo "... src/player.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
 .PHONY : help
 
 

@@ -14,6 +14,8 @@ public:
     Euchre();
     ~Euchre();
 
+
+    void gameLoop();
     void createNewPlayer(std::string playerName);
     void printPlayerHands();
     void deal();

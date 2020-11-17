@@ -4,36 +4,36 @@
 
 void EuchreDeck::createNewDeck() 
 {
-    this->mMainDeck = new std::vector<Card*>();
-    this->mDiscardPile = new std::stack<Card*>(); // empty
+    mMainDeck = new std::vector<Card*>();
+    mDiscardPile = new std::stack<Card*>(); // empty
 
-    this->mMainDeck->push_back(new Card("9",    "Hearts")); // <3
-    this->mMainDeck->push_back(new Card("10",   "Hearts"));
-    this->mMainDeck->push_back(new Card("Jack", "Hearts"));
-    this->mMainDeck->push_back(new Card("Queen","Hearts"));
-    this->mMainDeck->push_back(new Card("King", "Hearts"));
-    this->mMainDeck->push_back(new Card("Ace",  "Hearts"));
+    mMainDeck->push_back(new Card("9",    "Hearts")); // <3
+    mMainDeck->push_back(new Card("10",   "Hearts"));
+    mMainDeck->push_back(new Card("Jack", "Hearts"));
+    mMainDeck->push_back(new Card("Queen","Hearts"));
+    mMainDeck->push_back(new Card("King", "Hearts"));
+    mMainDeck->push_back(new Card("Ace",  "Hearts"));
 
-    this->mMainDeck->push_back(new Card("9",    "Diamonds")); // ◊
-    this->mMainDeck->push_back(new Card("10",   "Diamonds"));
-    this->mMainDeck->push_back(new Card("Jack", "Diamonds"));
-    this->mMainDeck->push_back(new Card("Queen","Diamonds"));
-    this->mMainDeck->push_back(new Card("King", "Diamonds"));
-    this->mMainDeck->push_back(new Card("Ace",  "Diamonds"));
+    mMainDeck->push_back(new Card("9",    "Diamonds")); // ◊
+    mMainDeck->push_back(new Card("10",   "Diamonds"));
+    mMainDeck->push_back(new Card("Jack", "Diamonds"));
+    mMainDeck->push_back(new Card("Queen","Diamonds"));
+    mMainDeck->push_back(new Card("King", "Diamonds"));
+    mMainDeck->push_back(new Card("Ace",  "Diamonds"));
 
-    this->mMainDeck->push_back(new Card("9",    "Spades")); 
-    this->mMainDeck->push_back(new Card("10",   "Spades"));
-    this->mMainDeck->push_back(new Card("Jack", "Spades"));
-    this->mMainDeck->push_back(new Card("Queen","Spades"));
-    this->mMainDeck->push_back(new Card("King", "Spades"));
-    this->mMainDeck->push_back(new Card("Ace",  "Spades"));
+    mMainDeck->push_back(new Card("9",    "Spades")); 
+    mMainDeck->push_back(new Card("10",   "Spades"));
+    mMainDeck->push_back(new Card("Jack", "Spades"));
+    mMainDeck->push_back(new Card("Queen","Spades"));
+    mMainDeck->push_back(new Card("King", "Spades"));
+    mMainDeck->push_back(new Card("Ace",  "Spades"));
 
-    this->mMainDeck->push_back(new Card("9",    "Clubs"));
-    this->mMainDeck->push_back(new Card("10",   "Clubs"));
-    this->mMainDeck->push_back(new Card("Jack", "Clubs"));
-    this->mMainDeck->push_back(new Card("Queen","Clubs"));
-    this->mMainDeck->push_back(new Card("King", "Clubs"));
-    this->mMainDeck->push_back(new Card("Ace",  "Clubs"));
+    mMainDeck->push_back(new Card("9",    "Clubs"));
+    mMainDeck->push_back(new Card("10",   "Clubs"));
+    mMainDeck->push_back(new Card("Jack", "Clubs"));
+    mMainDeck->push_back(new Card("Queen","Clubs"));
+    mMainDeck->push_back(new Card("King", "Clubs"));
+    mMainDeck->push_back(new Card("Ace",  "Clubs"));
 
 }
 

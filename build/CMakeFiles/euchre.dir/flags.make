@@ -6,5 +6,5 @@ CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/googletest/googletest -isystem /Users/ptumulty/Developer/VS_Code/C++/Euchre_plusplus/googletest/googletest/include 
+CXX_INCLUDES = 
 

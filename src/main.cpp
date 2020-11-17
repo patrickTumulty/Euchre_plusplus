@@ -3,6 +3,7 @@
 #include "carddeck.hpp"
 #include "euchredeck.hpp"
 #include "euchre.hpp"
+#include "cardprinter.hpp"
 
 int main()
 {
@@ -12,7 +13,11 @@ int main()
     euchre->createNewPlayer("Winston");
     euchre->createNewPlayer("Michael");
     euchre->deal();
-    euchre->printPlayerHands(); // prints player name, player hand, and hand rank
-    
+    euchre->printPlayerHands(); 
+
+
+    // Card * card = new Card("Jack", "Diamonds");
+    // std::cout << CardPrinter::printCard(card) << std::endl;
+
     return 0;
 }
