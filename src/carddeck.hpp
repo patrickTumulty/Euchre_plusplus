@@ -38,9 +38,9 @@ public:
     Card * revealTopCard(); 
     int getNumRemainingCards();
     Card * getNextCard();
-
-protected:
     std::vector<Card*> * mMainDeck;
+protected:
+    
     std::stack<Card*> * mDiscardPile;
     
 };

@@ -4,7 +4,7 @@
 
 Euchre::Euchre()
 {
-    mDeck = new EuchreDeck();
+    this->mDeck = new EuchreDeck();
     mPlayers = new std::map<std::string, Player*>();
     mDeck->createNewDeck();
     mDeck->shuffleDeck();

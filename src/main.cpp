@@ -15,8 +15,8 @@ int main()
     euchre->deal();
     euchre->printPlayerHands(); 
 
-
     // Card * card = new Card("Jack", "Diamonds");
+    // std::cout << card->value << std::endl;
     // std::cout << CardPrinter::printCard(card) << std::endl;
 
     return 0;

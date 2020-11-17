@@ -10,22 +10,18 @@
 
 Card::Card(std::string value, std::string suit)
 {
-    value = value;
-    suit = suit;
-    pointValue = 0;
+    this->value = value;
+    this->suit = suit;
+    this->pointValue = 0;
     setColor();
 }
 
 void Card::setColor()
 {
     if (suit == "Hearts" || suit == "Diamonds")
-    {
         color = "Red";
-    }
     else if (suit == "Clubs" || suit == "Spades")
-    {
         color = "Black";
-    }
 }
 
 CardDeck::CardDeck()
